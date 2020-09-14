@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+@keyframes Forhead {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+nav {
+  margin-left: 25cm;
+  padding-top: 8px;
+  padding-bottom: 4px;
+}
+nav > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap; /*assumes you only want one row  */
+}
+header li {
+  
+  animation-name: Forhead;
+  animation-duration: 5s;
+  padding: 15px;
+  background-color: bisque;
+  margin-right: 2px;
+  border-radius: 50px;
+}
+header {
+  /* background-color: bisque; */
+  position: fixed;
+  top: 0;
+  padding: 10px;
+  z-index: 2;
+  width: 100vw;
+}
+footer {
+  background-color: bisque;
+  /* height: 300px; */
+}
+h1 {
+  
+  /* margin: 10px; */
+  color:white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(151, 151, 151, 0.3);
+  /* padding: 10px; */
+  margin-top: 3cm;
+  text-align: center;
+  font-size: 4vw;
+}
+main {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 50, 0.4)
+    ),
+    url("https://www.creativeclique.co.za/wp-content/uploads/2019/01/Material-Design-Background-Undesigns-00.jpg");
+  background-size: cover;
+  height: calc(100vh - 90.636px);
+  /* height: 150vh; */
+  position: relative;
+  padding: 2px;
+}
+h4 {
+  text-align: center;
+  margin: 30px 30px 20px;
+  color: black;
+  font-size: 2vw;
+  background-color: rgba(151, 151, 151, 0.3);
+  
+}
+.btn {
+  /* padding: 20px 30px;
+    border-radius: 50px;
+    font-size: 25px;
+    border: hidden;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%); 
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+  display: inline-block;
+  transition: all 0.2s;
+  *****************************effet 1 **********************************************/
+  padding: 10px 30px;
+  position: relative;
+  /* top: 50%; */
+  /* left: 50%; */
+  font-size: 10px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  /*****************************effet 2 **********************************************/
+}
+.btn:hover {
+  transform: translateY(-1px);
+
+  box-shadow: 7px 6px 28px 1px rgba(66, 35, 177, 0.26);
+  /* transition: all 2s; */
+}
+.btn:active {
+  /* transform: translate(-1px);
+    transform: scale(0.98);
+    
+    color: rgb(74, 190, 109); 
+    box-shadow: 3px 2px 22px 1px rgba(138, 24, 24, 0.178); */
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  transform: translateY(4px);
+  /* Moving button 4px to y-axis */
+}
+.img1{
+  position: absolute;
+  left: 30%;
+}
+img {
+  position: relative;
+  margin-right: 10px;
+  justify-items: center;
+}
+.img:hover {
+  transform: scale(
+    1.5
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+#contactm {
+    padding-top: 10px;
+    column-count: 2;
+    column-width: 400px;
+}
+h3{font-size: 20px ;
+    color: white;
+    background-color: black;
+}
